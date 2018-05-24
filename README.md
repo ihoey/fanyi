@@ -1,10 +1,15 @@
 # Fanyi
 
 [![NPM version](https://img.shields.io/npm/v/fanyi.svg?style=flat)](https://npmjs.org/package/fanyi)
-[![Build Status](https://img.shields.io/travis/afc163/fanyi.svg?style=flat)](https://travis-ci.org/afc163/fanyi)
-[![David Status](https://img.shields.io/david/afc163/fanyi.svg?style=flat)](https://david-dm.org/afc163/fanyi)
 [![NPM downloads](http://img.shields.io/npm/dm/fanyi.svg?style=flat)](https://npmjs.org/package/fanyi)
-[![Code Sponsor](https://app.codesponsor.io/embed/ZNMHk5c6iQhad7FH54X8PxG6/afc163/fanyi.svg)](https://app.codesponsor.io/link/ZNMHk5c6iQhad7FH54X8PxG6/afc163/fanyi)
+
+
+[![](https://img.shields.io/badge/language-JavaScript-blue.svg?style=flat-square)](https://github.com/ihoey)
+[![](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](https://github.com/ihoey)
+[![](https://img.shields.io/badge/github-ihoey-orange.svg?style=flat-square)](https://github.com/ihoey)
+[![](https://img.shields.io/badge/QQ-✘д✘ヽゝだよ-red.svg?style=flat-square)](http://wpa.qq.com/msgrd?v=3&uin=1058221214&site=qq&menu=yes)
+[![](https://img.shields.io/badge/blog-ihoey-ff69b4.svg?style=flat-square)](https://blog.ihoey.com)
+
 
 A translate tool in your command line.
 

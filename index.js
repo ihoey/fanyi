@@ -9,23 +9,25 @@ var which = require('shelljs').which;
 var say = require('say');
 var isChinese = require('is-chinese');
 
-module.exports = function(word) {
+module.exports = function (word) {
   // say it
   try {
     say.speak(word, isChinese(word) ? 'Ting-Ting' : null);
-  } catch(e) {}
+  } catch (e) {
+    console.log(e);
+  }
 
   word = encodeURIComponent(word);
 
-  // iciba
-  request.get(SOURCE.iciba.replace('${word}', word), function (error, response, body) {
+  // google
+  request.get(SOURCE.google.replace('${word}', word), function (error, response, body) {
     if (!error && response.statusCode == 200) {
-      parseString(body, function (err, result) {
-        if (err) {
-          return;
-        }
-        print.iciba(result.dict);
-      });
+      try {
+        var data = JSON.parse(entities.decode(body));
+        print.google(data);
+      } catch (e) {
+        console.log(e);
+      }
     }
   });
 
@@ -35,18 +37,10 @@ module.exports = function(word) {
       try {
         var data = JSON.parse(entities.decode(body));
         print.youdao(data);
-      } catch(e) {
+      } catch (e) {
         // 来自您key的翻译API请求异常频繁，为保护其他用户的正常访问，只能暂时禁止您目前key的访问
+        console.log(e);
       }
-    }
-  });
-
-  // dictionaryapi
-  request.get(SOURCE.dictionaryapi.replace('${word}', word), function (error, response, body) {
-    if (!error && response.statusCode == 200) {
-      parseString(body, function (err, result) {
-        print.dictionaryapi(result.entry_list.entry, word);
-      });
     }
   });
 };
