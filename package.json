@@ -15,7 +15,6 @@
   },
   "keywords": [
     "translate",
-    "iciba",
     "youdao",
     "translation",
     "fanyi"
@@ -28,6 +27,7 @@
     "chalk": "^2.3.0",
     "html-entities": "^1.1.2",
     "is-chinese": "^1.2.5",
+    "ora": "^2.1.0",
     "request": "^2.81.0",
     "say": "^0.14.0",
     "shelljs": "^0.7.0",
