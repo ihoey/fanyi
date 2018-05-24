@@ -15,6 +15,8 @@ A translate tool in your command line.
 
 ![](https://t.alipayobjects.com/images/T1h_JfXkXhXXXXXXXX.png)
 
+修改自 [afc163](https://github.com/afc163/fanyi)
+
 ---
 
 ## Install
