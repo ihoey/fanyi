@@ -1,17 +1,17 @@
 #!/usr/bin/env node
 
-var chalk = require('chalk');
+var chalk = require("chalk");
 
 if (!process.argv[2]) {
-  console.log(chalk.green('fanyi ~ ' + require('../package').version));
-  console.log(chalk.magenta('Translate tools in command line'));
-  console.log(chalk.cyan('  $ ') + 'fanyi word');
-  console.log(chalk.cyan('  $ ') + 'fanyi world peace');
-  console.log(chalk.cyan('  $ ') + 'fanyi chinglish');
+  console.log(chalk.green("fanyi ~ " + require("../package").version));
+  console.log(chalk.magenta("Translate tools in command line"));
+  console.log(chalk.cyan("  $ ") + "fanyi word");
+  console.log(chalk.cyan("  $ ") + "fanyi world peace");
+  console.log(chalk.cyan("  $ ") + "fanyi chinglish");
   return;
 }
 
 console.log();
 
-var fanyi = require('..');
-fanyi(process.argv.slice(2).join(' '));
+var fanyi = require("..");
+fanyi(process.argv.slice(2).join(" "));
